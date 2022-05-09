@@ -8,7 +8,7 @@ public class IngredientTest {
     @Test
     public void getPriceTest() {
         Ingredient ingredient = new Ingredient(IngredientType.FILLING, "Мясо бессмертных моллюсков Protostomia", 1337f);
-        Assert.assertTrue("Не верная цена ингридиента", ingredient.getPrice() == 1337.00f);
+        Assert.assertEquals ("Не верная цена ингридиента", 1337f, ingredient.getPrice(), 0);
     }
 
     @Test

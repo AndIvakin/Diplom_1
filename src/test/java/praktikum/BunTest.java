@@ -3,7 +3,6 @@ package praktikum;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 public class BunTest {
 
@@ -16,6 +15,6 @@ public class BunTest {
     @Test
     public void getPriceTest() {
         Bun bun = new Bun("Краторная булка N-200i", 1255);
-        assertTrue("Цена булочки не совпадает.", bun.getPrice() == 1255.00f);
+        assertEquals("Цена булочки не совпадает.", 1255, bun.getPrice(), 0.00);
     }
 }
